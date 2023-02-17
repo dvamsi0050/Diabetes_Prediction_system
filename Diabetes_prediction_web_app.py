@@ -15,7 +15,7 @@ def diabetes_prediction(input_data):
     
     input_data_as_np_array = np.asarray(input_data)
     
-    input_data_reshaped = input_data_as_np_array().reshape(1,-1)
+    input_data_reshaped = input_data_as_np_array.reshape(1,-1)
     
     prediction = loaded_model.predict(input_data_reshaped)
     print(prediction)
